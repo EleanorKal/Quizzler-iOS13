@@ -8,22 +8,24 @@
 
 import Foundation
 
+// A struct QuizBrain contains the aarray quiy
+// The quiz array contains the Question Struct
 struct QuizBrain {
-    let quiz = [
-        Question(q: "A slug's blood is green.", a: "True"),
-        Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
-        Question(q: "The total surface area of two human lungs is approximately 70 square metres.", a: "True"),
-        Question(q: "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", a: "True"),
-        Question(q: "In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.", a: "False"),
-        Question(q: "It is illegal to pee in the Ocean in Portugal.", a: "True"),
-        Question(q: "You can lead a cow down stairs but not up stairs.", a: "False"),
-        Question(q: "Google was originally called 'Backrub'.", a: "True"),
-        Question(q: "Buzz Aldrin's mother's maiden name was 'Moon'.", a: "True"),
-        Question(q: "The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.", a: "False"),
-        Question(q: "No piece of square dry paper can be folded in half more than 7 times.", a: "False"),
-        Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
-    ]
     
+    let quiz = [
+    
+        Question(q: "Which is the largest organ in the human body?", a: ["A. Heart", "B. Skin", "C. Large Intestine"], ca: "Option B"),
+        Question(q: "Five dollars is worth how many nickels?", a: ["A. 25", "B. 50", "C. 100"], ca: "Option C"),
+        Question(q: "What do the letters in the GMT time zone stand for?", a: ["A. Global Meridian Time", "B. Greenwich Mean Time", "C. General Median Time"], ca: "Option B"),
+        Question(q: "What is the French word for 'hat'?", a: ["A. Chapeau", "B. Écharpe", "C. Bonnet"], ca: "Option A"),
+        Question(q: "In past times, what would a gentleman keep in his fob pocket?", a: ["A. Notebook", "B. Handkerchief", "C. Watch"], ca: "Option C"),
+        Question(q: "How would one say goodbye in Spanish?", a: ["A. Au Revoir", "B. Adiós", "C. Salir"], ca: "Option B"),
+        Question(q: "Which of these colours is NOT featured in the logo for Google?", a: ["A. Green", "B. Orange", "C. Blue"], ca: "Option B"),
+        Question(q: "What alcoholic drink is made from molasses?", a: ["A. Rum", "B. Whisky", "C. Gin"], ca: "Option A"),
+        Question(q: "What type of animal was Harambe?", a: ["A. Panda", "B. Gorilla", "C. Crocodile"], ca: "Option C"),
+        Question(q: "Where is Tasmania located?", a: ["A. Indonesia", "B. Australia", "C. Scotland"], ca: "Option B")
+    ]
+        
     var questionNumber = 0
     var score = 0
     
@@ -32,7 +34,7 @@ struct QuizBrain {
     // alternatively, for readability we can refer to the external parameter name as _ (_ ...)
     mutating func checkAnswer(_ userAnswer: String) -> Bool {
        //  let actualAnswer = quiz[questionNumber].answer
-        if userAnswer == quiz[questionNumber].answer {
+        if userAnswer == quiz[questionNumber].correctAnswer {
             score += 1
             return true
         } else {
@@ -45,8 +47,22 @@ struct QuizBrain {
         return quiz[questionNumber].text
     }
     
+    func getOptionTextOne() -> String {
+        return quiz[questionNumber].answers[0]
+    }
+    
+    func getOptionTextTwo() -> String {
+        return quiz[questionNumber].answers[1]
+    }
+    
+    func getOptionTextThree() -> String {
+        return quiz[questionNumber].answers[2]
+    }
+    
+    
+    
     func getProgress() -> Float {
-        let progress = Float(questionNumber) / Float(quiz.count )
+        let progress = Float(questionNumber) / Float(quiz.count ) 
         return progress
     }
     
