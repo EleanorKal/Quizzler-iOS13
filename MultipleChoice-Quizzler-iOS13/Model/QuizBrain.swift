@@ -14,16 +14,16 @@ struct QuizBrain {
     
     let quiz = [
     
-        Question(q: "Which is the largest organ in the human body?", a: ["A. Heart", "B. Skin", "C. Large Intestine"], ca: "Option B"),
-        Question(q: "Five dollars is worth how many nickels?", a: ["A. 25", "B. 50", "C. 100"], ca: "Option C"),
-        Question(q: "What do the letters in the GMT time zone stand for?", a: ["A. Global Meridian Time", "B. Greenwich Mean Time", "C. General Median Time"], ca: "Option B"),
-        Question(q: "What is the French word for 'hat'?", a: ["A. Chapeau", "B. Écharpe", "C. Bonnet"], ca: "Option A"),
-        Question(q: "In past times, what would a gentleman keep in his fob pocket?", a: ["A. Notebook", "B. Handkerchief", "C. Watch"], ca: "Option C"),
-        Question(q: "How would one say goodbye in Spanish?", a: ["A. Au Revoir", "B. Adiós", "C. Salir"], ca: "Option B"),
-        Question(q: "Which of these colours is NOT featured in the logo for Google?", a: ["A. Green", "B. Orange", "C. Blue"], ca: "Option B"),
-        Question(q: "What alcoholic drink is made from molasses?", a: ["A. Rum", "B. Whisky", "C. Gin"], ca: "Option A"),
-        Question(q: "What type of animal was Harambe?", a: ["A. Panda", "B. Gorilla", "C. Crocodile"], ca: "Option C"),
-        Question(q: "Where is Tasmania located?", a: ["A. Indonesia", "B. Australia", "C. Scotland"], ca: "Option B")
+        Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], ca: "Skin"),
+        Question(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], ca: "100"),
+        Question(q: "What do the letters in the GMT time zone stand for?", a: ["Global Meridian Time", "Greenwich Mean Time", "General Median Time"], ca: "Greenwich Mean Time"),
+        Question(q: "What is the French word for 'hat'?", a: ["Chapeau", "Écharpe", "Bonnet"], ca: "Chapeau"),
+        Question(q: "In past times, what would a gentleman keep in his fob pocket?", a: ["Notebook", "Handkerchief", "Watch"], ca: "Watch"),
+        Question(q: "How would one say goodbye in Spanish?", a: ["Au Revoir", "Adiós", "Salir"], ca: "Adiós"),
+        Question(q: "Which of these colours is NOT featured in the logo for Google?", a: ["Green", "Orange", "Blue"], ca: "Orange"),
+        Question(q: "What alcoholic drink is made from molasses?", a: ["Rum", "Whisky", "Gin"], ca: "Rum"),
+        Question(q: "What type of animal was Harambe?", a: ["Panda", "Gorilla", "Crocodile"], ca: "Crocodile"),
+        Question(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], ca: "Australia")
     ]
         
     var questionNumber = 0

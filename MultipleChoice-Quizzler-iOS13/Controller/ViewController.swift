@@ -13,15 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
-    @IBOutlet weak var optionOneLabel: UILabel!
-    @IBOutlet weak var optionTwoLabel: UILabel!
-    @IBOutlet weak var optionThreeLabel: UILabel!
     @IBOutlet weak var optionAButton: UIButton!
     @IBOutlet weak var optionBButton: UIButton!
     @IBOutlet weak var optionCButton: UIButton!
     
     var quizBrain = QuizBrain()
-        
+    
     
     
     override func viewDidLoad() {
@@ -60,9 +57,9 @@ class ViewController: UIViewController {
     func updateUI() {
         questionLabel.text = quizBrain.getQuestionText()
         // load multiple choice questions
-        optionOneLabel.text = quizBrain.getOptionTextOne()
-        optionTwoLabel.text = quizBrain.getOptionTextTwo()
-        optionThreeLabel.text = quizBrain.getOptionTextThree()
+        optionAButton.setTitle(quizBrain.getOptionTextOne(), for: .normal)
+        optionBButton.setTitle(quizBrain.getOptionTextTwo(), for: .normal)
+        optionCButton.setTitle(quizBrain.getOptionTextThree(), for: .normal)
         // end of multiple choice load
         progressBar.progress = quizBrain.getProgress()
         scoreLabel.text = "Score: \(quizBrain.getScore())"

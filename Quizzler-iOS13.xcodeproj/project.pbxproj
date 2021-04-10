@@ -62,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
+				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,7 +92,6 @@
 				9C8BC924261B6F7C00B404D1 /* View */,
 				9C8BC925261B6F9100B404D1 /* Controller */,
 				AD4BDE5222D878BC005BA4CC /* Assets.xcassets */,
-				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
 				AD4BDE5722D878BC005BA4CC /* Info.plist */,
 			);
 			path = "Quizzler-iOS13";

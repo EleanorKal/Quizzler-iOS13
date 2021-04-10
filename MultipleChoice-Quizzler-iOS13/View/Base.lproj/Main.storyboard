@@ -17,22 +17,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="eGL-jB-Wwb">
-                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
+                                <rect key="frame" x="0.0" y="740.5" width="414" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="7ES-Tc-xxA"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fal-oS-tEg">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="20" y="44" width="374" height="764.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o37-Rt-glw">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="uDX-s7-rwy"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="144.5" width="374" height="199"/>
+                                        <rect key="frame" x="0.0" y="43" width="374" height="431.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="199" id="Iuu-g5-2Qd"/>
                                         </constraints>
@@ -40,74 +43,42 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Qy-W7-4Y7">
-                                        <rect key="frame" x="0.0" y="353.5" width="374" height="174.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpI-Jf-D7q" userLabel="Option One Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="51.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="51.5" id="PFR-pu-bfJ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQu-Fm-U4T" userLabel="Option Two Label">
-                                                <rect key="frame" x="0.0" y="61.5" width="374" height="51.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="51.5" id="T4C-aa-alQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGU-ry-4Bb" userLabel="Option Three Label">
-                                                <rect key="frame" x="0.0" y="123" width="374" height="51.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="51.5" id="14t-MT-zWX"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yx-HV-oGe" userLabel="Option A">
-                                        <rect key="frame" x="0.0" y="538" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="484.5" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="sow-VQ-D7U"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Option A" backgroundImage="Rectangle">
+                                        <state key="normal" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsn-Fq-MMr"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQ2-2U-FtW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC" userLabel="Option B">
-                                        <rect key="frame" x="0.0" y="628" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="574.5" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="fNm-VT-9Ox"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Option B" backgroundImage="Rectangle">
+                                        <state key="normal" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orb-if-jAe"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtp-B4-iMX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dME-3h-xqF" userLabel="Option C">
-                                        <rect key="frame" x="0.0" y="718" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="664.5" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Z9q-Uh-oTZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Option C" backgroundImage="Rectangle">
+                                        <state key="normal" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -115,7 +86,7 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
-                                        <rect key="frame" x="0.0" y="808" width="374" height="11"/>
+                                        <rect key="frame" x="0.0" y="754.5" width="374" height="11"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.2770131528" green="0.3800790906" blue="0.57570761439999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -143,9 +114,6 @@
                         <outlet property="optionAButton" destination="8yx-HV-oGe" id="Bjv-y3-2TX"/>
                         <outlet property="optionBButton" destination="tbn-vQ-GyC" id="TX2-jz-wHP"/>
                         <outlet property="optionCButton" destination="dME-3h-xqF" id="Ra5-MO-GW1"/>
-                        <outlet property="optionOneLabel" destination="ZpI-Jf-D7q" id="ywF-Zj-duA"/>
-                        <outlet property="optionThreeLabel" destination="BGU-ry-4Bb" id="qhv-lv-d1k"/>
-                        <outlet property="optionTwoLabel" destination="hQu-Fm-U4T" id="gNo-Vb-T33"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="Z2C-vh-Pcc"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="apl-rM-zq5"/>
                         <outlet property="scoreLabel" destination="o37-Rt-glw" id="RGR-G9-rJl"/>
