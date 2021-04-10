@@ -8,15 +8,27 @@
 
 import Foundation
 
+// Original Struct
+//struct Question {
+//    let text: String
+//    let answer: String
+//
+//    init(q: String, a: String) {
+//        text = q
+//        answer = a
+//    }
+//}
+
 struct Question {
     let text: String
-    let answers: [String]
+    let multipleChoice: [String]
     let correctAnswer: String
     
-    init(q: String, a: [String], ca: String) {
+    init(q: String, multipleChoice: [String], correctAnswer: String) {
         text = q
-        answers = a
-        correctAnswer = ca
-        
+        self.multipleChoice = multipleChoice
+        self.correctAnswer = correctAnswer
     }
 }
+
+
